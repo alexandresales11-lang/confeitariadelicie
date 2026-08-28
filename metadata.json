@@ -1,0 +1,6 @@
+{
+  "name": "Confeitaria Deliciê",
+  "description": "Site e cardápio oficial da Confeitaria Deliciê. Bolos personalizados, docinhos artesanais, bolos pra café, sobremesas e kits festa sob encomenda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

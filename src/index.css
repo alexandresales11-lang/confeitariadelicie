@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-delicie-lilac: #B876CE;
+    --color-delicie-lilac-light: #EBD6F5;
+    --color-delicie-lilac-dark: #6D2E7B;
+    --color-delicie-pink: #E87A90;
+    --color-delicie-pink-soft: #FDE8EE;
+    --color-delicie-cream: #FAF6FB;
+    --color-delicie-gold: #C28B53;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FAF6FB;
+    color: #38243E;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-script {
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .font-cursive {
+    font-family: 'Great Vibes', cursive;
+  }
+}
+
+/* Custom Confectionery Pattern and Wave Utilities */
+.delicie-wave-top {
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, #fff 13px);
+  background-size: 24px 20px;
+}
+
+.delicie-scallop {
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgba(184, 118, 206, 0.25);
+}
+
+.delicie-badge {
+  background: radial-gradient(circle, #D89EE8 0%, #B876CE 100%);
+  position: relative;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4E8F8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A8E5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B876CE;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.92; transform: scale(1.03); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
