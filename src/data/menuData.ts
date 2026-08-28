@@ -1,4 +1,11 @@
 import { CakeSizeOption, CakeFilling, MenuItem, PartyKit } from '../types';
+import tortaBrigadeiroImg from '../assets/images/torta_brigadeiro_1787958572379.jpg';
+import boloTradicionalImg from '../assets/images/bolo_tradicional_1787958587716.jpg';
+import boloBananaImg from '../assets/images/bolo_banana_1787958598862.jpg';
+import docinhosFestaImg from '../assets/images/docinhos_festa_1787958609542.jpg';
+import boloVulcaoImg from '../assets/images/bolo_vulcao_1787958624358.jpg';
+
+export const DEFAULT_CAKE_FALLBACK = tortaBrigadeiroImg;
 
 export const STORE_INFO = {
   name: 'Confeitaria Deliciê',
@@ -24,7 +31,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 6,
     slicesLabel: '4 a 6 fatias',
     recommendedFor: 'Mini comemoração / Presente a dois',
-    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-12cm',
@@ -34,7 +41,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 12,
     slicesLabel: '8 a 12 fatias',
     recommendedFor: 'Pequenas reuniões e mesversários',
-    image: 'https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-15cm',
@@ -44,7 +51,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 15,
     slicesLabel: '13 a 15 fatias',
     recommendedFor: 'Festinhas em família',
-    image: 'https://images.unsplash.com/photo-1562772186-36894546526c?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-17cm',
@@ -54,7 +61,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 18,
     slicesLabel: '15 a 18 fatias',
     recommendedFor: 'Aniversários e confraternizações',
-    image: 'https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-20cm',
@@ -64,7 +71,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 24,
     slicesLabel: '20 a 24 fatias',
     recommendedFor: 'Festas médias e comemorações',
-    image: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-23cm',
@@ -74,7 +81,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 28,
     slicesLabel: '25 a 28 fatias',
     recommendedFor: 'Celebrações especiais',
-    image: 'https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-25cm',
@@ -84,7 +91,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 38,
     slicesLabel: '34 a 38 fatias',
     recommendedFor: 'Grandes aniversários e eventos',
-    image: 'https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-30cm',
@@ -94,7 +101,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 56,
     slicesLabel: '50 a 56 fatias',
     recommendedFor: 'Festas completas e formaturas',
-    image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'cake-35cm',
@@ -104,7 +111,7 @@ export const CAKE_SIZES: CakeSizeOption[] = [
     slicesMax: 80,
     slicesLabel: '74 a 80 fatias',
     recommendedFor: 'Casamentos e mega eventos',
-    image: 'https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
 ];
 
@@ -189,7 +196,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 28.0,
     unitLabel: 'unidade',
     description: 'Massa fofa artesanal combinando baunilha suave e cacau nobre, perfeito para a hora do café.',
-    image: 'https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80',
+    image: boloTradicionalImg,
     badge: 'Clássico',
   },
   {
@@ -198,8 +205,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'bolos-cafe',
     price: 30.0,
     unitLabel: 'unidade',
-    description: 'Bolo de cenoura ultra fofinho e molhadinho, tradição que derrete na boca.',
-    image: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=600&q=80',
+    description: 'Bolo de cenoura ultra fofinho e molhadinho, tradição que derrete na boca com cobertura.',
+    image: tortaBrigadeiroImg,
     badge: 'Favorito',
   },
   {
@@ -209,7 +216,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 25.0,
     unitLabel: 'unidade',
     description: 'Sabor caseiro autêntico, textura cremosa e aroma irresistível de milho fresco.',
-    image: 'https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=600&q=80',
+    image: boloTradicionalImg,
   },
   {
     id: 'cafe-tradicional',
@@ -218,7 +225,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 25.0,
     unitLabel: 'unidade',
     description: 'Bolo da vovó macio, perfumado com toques de baunilha.',
-    image: 'https://images.unsplash.com/photo-1562772186-36894546526c?auto=format&fit=crop&w=600&q=80',
+    image: boloTradicionalImg,
   },
   {
     id: 'cafe-banana',
@@ -227,7 +234,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 50.0,
     unitLabel: 'unidade',
     description: 'Fatias de banana douradas em calda de caramelo brilhante e massa perfumada.',
-    image: 'https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80',
+    image: boloBananaImg,
     badge: 'Especial',
   },
   {
@@ -237,7 +244,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 55.0,
     unitLabel: 'unidade',
     description: 'Rodelas suculentas de abacaxi caramelizado sobre massa leve e aveludada.',
-    image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80',
+    image: boloBananaImg,
     badge: 'Especial',
   },
   {
@@ -247,7 +254,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 50.0,
     unitLabel: 'unidade',
     description: 'A união divina do bolo macio com uma camada lisinha de pudim de leite condensado.',
-    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80',
+    image: boloBananaImg,
     badge: 'Mais Vendido',
   },
 
@@ -259,7 +266,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 35.0,
     unitLabel: 'a partir de',
     description: 'Bolo com cascata farta e cremosa de cobertura ao cortar. (Bolo chocolatudo tem acréscimo).',
-    image: 'https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=600&q=80',
+    image: boloVulcaoImg,
     options: [
       { label: 'Tamanho P', price: 35.0 },
       { label: 'Tamanho M', price: 45.0 },
@@ -273,7 +280,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 65.0,
     unitLabel: 'a partir de',
     description: 'Cercado com Kit Kat crocante, fita decorativa e topo farto de recheio ou morangos. (Chocolatudo com acréscimo).',
-    image: 'https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
     badge: 'Super Glamour',
     options: [
       { label: 'Tamanho P', price: 65.0 },
@@ -288,7 +295,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 40.0,
     unitLabel: 'a partir de',
     description: 'Montagem moderna com transparência elegante revelando camadas fartas de recheio e morangos frescos.',
-    image: 'https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
     options: [
       { label: 'Tamanho P', price: 40.0 },
       { label: 'Tamanho M', price: 70.0 },
@@ -308,7 +315,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.15,
     badge: 'Campeão de Vendas',
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'docinho-beijinho',
@@ -320,7 +327,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: 'https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-bicho-de-pe',
@@ -333,7 +340,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.10,
     badge: 'Delicado',
-    image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-maracuja',
@@ -345,7 +352,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-limao',
@@ -357,7 +364,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: 'https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-pacoca',
@@ -369,7 +376,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: 'https://images.unsplash.com/photo-1559553156-2e97137af16f?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-oreo',
@@ -382,7 +389,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.25,
     badge: 'Moderno',
-    image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'docinho-cafe',
@@ -394,7 +401,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.15,
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'docinho-cajuzinho',
@@ -406,7 +413,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.15,
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-casadinho',
@@ -419,7 +426,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.15,
     badge: 'Popular',
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'docinho-flor',
@@ -432,7 +439,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.25,
     badge: 'Artístico',
-    image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-olho-sogra',
@@ -444,7 +451,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.20,
-    image: 'https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-surpresa-uva',
@@ -457,7 +464,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.20,
     badge: 'Favorito',
-    image: 'https://images.unsplash.com/photo-1559553156-2e97137af16f?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-ninho-nutella',
@@ -470,7 +477,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.30,
     badge: 'Top Pedidos ⭐',
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'docinho-romeu-julieta',
@@ -482,7 +489,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.35,
-    image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-coco-queimado',
@@ -494,7 +501,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.15,
-    image: 'https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
   {
     id: 'docinho-churros',
@@ -507,7 +514,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.25,
     badge: 'Irresistível',
-    image: 'https://images.unsplash.com/photo-1559553156-2e97137af16f?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
   },
 
   // Docinhos no Copo & Trufas
@@ -518,7 +525,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 130.0,
     unitLabel: '100 unidades',
     description: 'Base crocante, creme azedinho de limão e chantininho suave.',
-    image: 'https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
     badge: '100 unidades',
   },
   {
@@ -528,7 +535,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 135.0,
     unitLabel: '100 unidades',
     description: 'Mousse aveludada de maracujá com sementinhas decorativas.',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
     badge: '100 unidades',
   },
   {
@@ -540,7 +547,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Copinho de puro chocolate belga recheado e finalizado com uva fresca.',
     minUnits: 20,
     pricePerUnit: 1.50,
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
     badge: 'Mínimo 20 un',
   },
   {
@@ -550,7 +557,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 135.0,
     unitLabel: '100 unidades',
     description: 'Brigadeiro de colher ultra cremoso para comer de colherinha.',
-    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
     badge: '100 unidades',
   },
   {
@@ -560,7 +567,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 135.0,
     unitLabel: '100 unidades',
     description: 'Camadas de brigadeiro branco nobre intercaladas com pedaços de morango.',
-    image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
     badge: '100 unidades',
   },
   {
@@ -570,7 +577,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 120.0,
     unitLabel: '100 unidades',
     description: 'Gelatinas coloridas e refrescantes com toque de creme leve.',
-    image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80',
+    image: docinhosFestaImg,
     badge: '100 unidades',
   },
   {
@@ -583,7 +590,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 20,
     pricePerUnit: 3.00,
     badge: 'Amor & Requinte',
-    image: 'https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
   {
     id: 'trufa-tradicional',
@@ -594,7 +601,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Trufas artesanais com recheios nobres e acabamento em riscas de chocolate.',
     minUnits: 20,
     pricePerUnit: 2.50,
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
   },
 
   // Sobremesas & Salgados
@@ -605,7 +612,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 35.0,
     unitLabel: 'a partir de',
     description: 'Pudim sem furinhos, extremamente lisinho e aveludado, com calda de caramelo dourada.',
-    image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80',
+    image: boloBananaImg,
     badge: 'Tradicional',
     options: [
       { label: 'Tamanho P', price: 35.0 },
@@ -623,7 +630,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 10,
     pricePerUnit: 2.00,
     badge: 'Salgado Quentinho',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80',
+    image: boloTradicionalImg,
   },
 
   // Cestas para presente
@@ -634,7 +641,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 50.0,
     unitLabel: 'a partir de R$ 50,00',
     description: 'Cestas decoradas com balões, bolo Kit Kat, caixinha de docinhos personalizados com letras e laço de fita. Entre em contato para orçamento personalizado!',
-    image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+    image: tortaBrigadeiroImg,
     badge: 'Personalizável',
   },
 ];

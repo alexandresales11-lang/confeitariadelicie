@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MenuItem, CartItem } from '../types';
+import { DEFAULT_CAKE_FALLBACK } from '../data/menuData';
 import { X, Plus, Minus, ShoppingBag, Sparkles, Check } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -86,6 +87,9 @@ export const ProductModal: React.FC<ProductModalProps> = ({ item, onClose, onAdd
               src={item.image}
               alt={item.name}
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = DEFAULT_CAKE_FALLBACK;
+              }}
               className="w-full h-full object-cover"
             />
           ) : (

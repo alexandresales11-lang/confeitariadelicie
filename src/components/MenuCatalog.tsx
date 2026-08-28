@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { MENU_ITEMS } from '../data/menuData';
+import { MENU_ITEMS, DEFAULT_CAKE_FALLBACK } from '../data/menuData';
 import { MenuItem, CartItem } from '../types';
 import { Search, Plus, Check, Sparkles, Filter, Info, ShoppingBag } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -176,6 +176,9 @@ export const MenuCatalog: React.FC<MenuCatalogProps> = ({ onAddToCart, onSelectI
                           src={item.image}
                           alt={item.name}
                           referrerPolicy="no-referrer"
+                          onError={(e) => {
+                            e.currentTarget.src = DEFAULT_CAKE_FALLBACK;
+                          }}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                       ) : (
