@@ -254,7 +254,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 50.0,
     unitLabel: 'unidade',
     description: 'A união divina do bolo macio com uma camada lisinha de pudim de leite condensado.',
-    image: boloBananaImg,
+    image: 'https://i.imgur.com/MELHlmR.jpeg',
     badge: 'Mais Vendido',
   },
 
@@ -266,7 +266,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 35.0,
     unitLabel: 'a partir de',
     description: 'Bolo com cascata farta e cremosa de cobertura ao cortar. (Bolo chocolatudo tem acréscimo).',
-    image: boloVulcaoImg,
+    image: 'https://i.imgur.com/hkEgbI5.jpeg',
     options: [
       { label: 'Tamanho P', price: 35.0 },
       { label: 'Tamanho M', price: 45.0 },
@@ -280,7 +280,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 65.0,
     unitLabel: 'a partir de',
     description: 'Cercado com Kit Kat crocante, fita decorativa e topo farto de recheio ou morangos. (Chocolatudo com acréscimo).',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/K4XsD7x.jpeg',
     badge: 'Super Glamour',
     options: [
       { label: 'Tamanho P', price: 65.0 },
@@ -295,7 +295,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 40.0,
     unitLabel: 'a partir de',
     description: 'Montagem moderna com transparência elegante revelando camadas fartas de recheio e morangos frescos.',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/D3SBDp4.jpeg',
     options: [
       { label: 'Tamanho P', price: 40.0 },
       { label: 'Tamanho M', price: 70.0 },
@@ -327,7 +327,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/qnwtSvC.jpeg',
   },
   {
     id: 'docinho-bicho-de-pe',
@@ -525,7 +525,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 130.0,
     unitLabel: '100 unidades',
     description: 'Base crocante, creme azedinho de limão e chantininho suave.',
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/bu28jrT.jpeg',
     badge: '100 unidades',
   },
   {
@@ -630,7 +630,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 10,
     pricePerUnit: 2.00,
     badge: 'Salgado Quentinho',
-    image: boloTradicionalImg,
+    image: 'https://i.imgur.com/4kzawlz.jpeg',
   },
 
   // Cestas para presente
@@ -641,7 +641,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 50.0,
     unitLabel: 'a partir de R$ 50,00',
     description: 'Cestas decoradas com balões, bolo Kit Kat, caixinha de docinhos personalizados com letras e laço de fita. Entre em contato para orçamento personalizado!',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/qBG2zsa.jpeg',
     badge: 'Personalizável',
   },
 ];
