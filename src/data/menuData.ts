@@ -10,6 +10,7 @@ export const DEFAULT_CAKE_FALLBACK = tortaBrigadeiroImg;
 export const STORE_INFO = {
   name: 'Confeitaria Deliciê',
   tagline: 'Bolos Artesanais, Doces Especiais & Kits Festa',
+  logoUrl: 'https://i.imgur.com/lN89tZd.jpeg',
   instagram: 'confeitariadelicie__',
   instagramUrl: 'https://instagram.com/confeitariadelicie__',
   phoneDisplay: '(74) 99946-0882',
@@ -340,7 +341,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.10,
     badge: 'Delicado',
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/7pH5p1g.jpeg',
   },
   {
     id: 'docinho-maracuja',
@@ -352,7 +353,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/i9OmBPG.jpeg',
   },
   {
     id: 'docinho-limao',
@@ -364,7 +365,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/nRP95gr.jpeg',
   },
   {
     id: 'docinho-pacoca',
@@ -376,7 +377,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.10,
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/lmrY6R6.jpeg',
   },
   {
     id: 'docinho-oreo',
@@ -413,7 +414,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.15,
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/dIv2JlL.jpeg',
   },
   {
     id: 'docinho-casadinho',
@@ -426,7 +427,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.15,
     badge: 'Popular',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/UjEUBjD.jpeg',
   },
   {
     id: 'docinho-flor',
@@ -439,7 +440,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.25,
     badge: 'Artístico',
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/rlAWfzz.jpeg',
   },
   {
     id: 'docinho-olho-sogra',
@@ -451,7 +452,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 30,
     pricePerHundred: true,
     pricePerUnit: 1.20,
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/pK5RN7A.jpeg',
   },
   {
     id: 'docinho-surpresa-uva',
@@ -464,7 +465,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.20,
     badge: 'Favorito',
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/cIjkxnB.jpeg',
   },
   {
     id: 'docinho-ninho-nutella',
@@ -590,7 +591,7 @@ export const MENU_ITEMS: MenuItem[] = [
     minUnits: 20,
     pricePerUnit: 3.00,
     badge: 'Amor & Requinte',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/sOlHmmn.jpeg',
   },
   {
     id: 'trufa-tradicional',
@@ -601,7 +602,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Trufas artesanais com recheios nobres e acabamento em riscas de chocolate.',
     minUnits: 20,
     pricePerUnit: 2.50,
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/dj790at.jpeg',
   },
 
   // Sobremesas & Salgados
@@ -612,7 +613,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 35.0,
     unitLabel: 'a partir de',
     description: 'Pudim sem furinhos, extremamente lisinho e aveludado, com calda de caramelo dourada.',
-    image: boloBananaImg,
+    image: 'https://i.imgur.com/shUW998.jpeg',
     badge: 'Tradicional',
     options: [
       { label: 'Tamanho P', price: 35.0 },

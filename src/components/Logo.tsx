@@ -1,4 +1,5 @@
 import React from 'react';
+import { STORE_INFO } from '../data/menuData';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg' | 'hero';
@@ -22,39 +23,23 @@ export const WhiskIcon: React.FC<{ className?: string }> = ({ className = 'w-6 h
   </svg>
 );
 
-export const ScallopBadgeLogo: React.FC<{ className?: string; showPhone?: boolean }> = ({
+export const ScallopBadgeLogo: React.FC<{ className?: string; showPhone?: boolean; src?: string }> = ({
   className = '',
-  showPhone = true,
+  src = STORE_INFO.logoUrl,
 }) => {
   return (
-    <div className={`relative inline-flex flex-col items-center justify-center p-6 text-center select-none ${className}`}>
-      {/* Scalloped lilac circle background */}
-      <div className="relative w-44 h-44 rounded-full bg-gradient-to-br from-[#D89EE8] via-[#C485DA] to-[#AF6CD2] shadow-lg flex flex-col items-center justify-center border-4 border-white/90 ring-4 ring-[#EBD6F5]">
-        {/* Floating cute sprinkle hearts and accents */}
-        <div className="absolute top-3 text-[#E87A90] text-xs font-bold animate-pulse">♥ ♥</div>
-        <div className="absolute left-4 top-8 text-[#56D4D8] text-xs font-bold rotate-[-15deg]">✦</div>
-        <div className="absolute right-4 top-8 text-[#56D4D8] text-xs font-bold rotate-[15deg]">✦</div>
+    <div className={`relative inline-flex flex-col items-center justify-center p-3 text-center select-none ${className}`}>
+      {/* Soft outer glow */}
+      <div className="absolute inset-0 rounded-full bg-[#EAD6EE]/60 blur-xl scale-95 pointer-events-none" />
 
-        {/* Brand Name */}
-        <span className="text-white text-2xl font-black tracking-tight font-serif drop-shadow-sm mt-1">
-          Deliciê
-        </span>
-        <span className="text-[#FDF2FF] font-script text-xl tracking-wider -mt-1 font-bold">
-          Confeitaria
-        </span>
-
-        {/* Decorative flourishes */}
-        <div className="flex items-center gap-1.5 my-1">
-          <span className="text-[#4CE0E5] text-xs font-serif">~</span>
-          <span className="text-[#FF4081] text-xs">♥</span>
-          <span className="text-[#4CE0E5] text-xs font-serif">~</span>
-        </div>
-
-        {showPhone && (
-          <span className="text-[11px] font-medium text-white/90 tracking-wide font-sans bg-[#8C3E9C]/40 px-2.5 py-0.5 rounded-full mt-0.5">
-            (74) 99946-0882
-          </span>
-        )}
+      {/* Scalloped lilac circular frame container */}
+      <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-[#D89EE8] shadow-xl flex items-center justify-center border-4 border-white ring-4 ring-[#EBD6F5] overflow-hidden group hover:ring-[#D89EE8] transition-all duration-300">
+        <img
+          src={src}
+          alt="Confeitaria Deliciê Logo"
+          referrerPolicy="no-referrer"
+          className="w-full h-full object-cover object-center transform scale-[1.24] group-hover:scale-[1.28] transition-transform duration-500"
+        />
       </div>
     </div>
   );
@@ -65,26 +50,43 @@ export const Logo: React.FC<LogoProps> = ({ size = 'md', variant = 'header', cla
     return <ScallopBadgeLogo className={className} />;
   }
 
-  const sizeClasses = {
+  const iconSizes = {
+    sm: 'w-10 h-10',
+    md: 'w-12 h-12 sm:w-13 sm:h-13',
+    lg: 'w-14 h-14',
+    hero: 'w-16 h-16 sm:w-20 sm:h-20',
+  };
+
+  const textSizes = {
     sm: 'text-lg',
-    md: 'text-xl',
+    md: 'text-xl sm:text-2xl',
     lg: 'text-2xl',
     hero: 'text-3xl sm:text-4xl',
   };
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      {/* Whisk Icon Iconography */}
-      <div className="relative flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#EAD6EE] to-[#FCE7F0] border border-[#D8B4E2]/60 shadow-sm p-1">
-        <WhiskIcon className="w-8 h-8 transform -rotate-12" />
+      {/* Circular Brand Logo Badge with high-clarity rendering */}
+      <div
+        className={`relative flex-shrink-0 flex items-center justify-center ${iconSizes[size]} rounded-full overflow-hidden border-2 border-white ring-2 ring-[#D8B4E2] shadow-sm bg-[#D89EE8]`}
+      >
+        <img
+          src={STORE_INFO.logoUrl}
+          alt="Deliciê Logo"
+          referrerPolicy="no-referrer"
+          loading="eager"
+          decoding="sync"
+          className="w-full h-full object-cover object-center transform scale-[1.24] filter contrast-[1.04] brightness-[1.02]"
+          style={{ imageRendering: 'auto' }}
+        />
       </div>
 
-      <div className="flex flex-col">
-        <span className="font-script text-[#B876CE] text-sm leading-none font-bold">
+      <div className="flex flex-col justify-center">
+        <span className="font-script text-[#B876CE] text-sm sm:text-base leading-none font-bold">
           Confeitaria
         </span>
         <span
-          className={`font-serif font-black tracking-wider text-[#6D2E7B] uppercase leading-tight ${sizeClasses[size]}`}
+          className={`font-serif font-black tracking-wider text-[#6D2E7B] uppercase leading-tight ${textSizes[size]}`}
         >
           DELICIÊ
         </span>
