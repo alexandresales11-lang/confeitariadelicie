@@ -197,7 +197,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 28.0,
     unitLabel: 'unidade',
     description: 'Massa fofa artesanal combinando baunilha suave e cacau nobre, perfeito para a hora do café.',
-    image: boloTradicionalImg,
+    image: 'https://i.imgur.com/SEeXPMx.jpeg',
     badge: 'Clássico',
   },
   {
@@ -207,7 +207,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 30.0,
     unitLabel: 'unidade',
     description: 'Bolo de cenoura ultra fofinho e molhadinho, tradição que derrete na boca com cobertura.',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/AD4IeRg.jpeg',
     badge: 'Favorito',
   },
   {
@@ -226,7 +226,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 25.0,
     unitLabel: 'unidade',
     description: 'Bolo da vovó macio, perfumado com toques de baunilha.',
-    image: boloTradicionalImg,
+    image: 'https://i.imgur.com/mmFfgmc.jpeg',
   },
   {
     id: 'cafe-banana',
@@ -316,7 +316,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.15,
     badge: 'Campeão de Vendas',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/9rUWBq2.jpeg',
   },
   {
     id: 'docinho-beijinho',
@@ -390,7 +390,7 @@ export const MENU_ITEMS: MenuItem[] = [
     pricePerHundred: true,
     pricePerUnit: 1.25,
     badge: 'Moderno',
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/7TMsqFa.jpeg',
   },
   {
     id: 'docinho-cafe',
@@ -548,7 +548,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Copinho de puro chocolate belga recheado e finalizado com uva fresca.',
     minUnits: 20,
     pricePerUnit: 1.50,
-    image: tortaBrigadeiroImg,
+    image: 'https://i.imgur.com/NJBQwQf.jpeg',
     badge: 'Mínimo 20 un',
   },
   {
@@ -568,7 +568,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 135.0,
     unitLabel: '100 unidades',
     description: 'Camadas de brigadeiro branco nobre intercaladas com pedaços de morango.',
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/Kcp3Ap8.jpeg',
     badge: '100 unidades',
   },
   {
@@ -578,7 +578,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 120.0,
     unitLabel: '100 unidades',
     description: 'Gelatinas coloridas e refrescantes com toque de creme leve.',
-    image: docinhosFestaImg,
+    image: 'https://i.imgur.com/B9bzJdQ.jpeg',
     badge: '100 unidades',
   },
   {
