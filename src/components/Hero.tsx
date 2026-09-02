@@ -51,7 +51,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCakeBuilder, onExploreMenu }) 
 
             {/* Subtext with the Brand Philosophy */}
             <p className="text-base sm:text-lg text-[#6B4775] leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
-              Bolos personalizados com até 2 recheios à sua escolha, docinhos finos no cento,
+              Bolos personalizados com até 2 recheios à sua escolha, docinhos tradicionais no cento,
               bolos caseiros para o café e kits festa completos feitos com todo amor e dedicação.
             </p>
 

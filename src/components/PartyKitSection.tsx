@@ -47,7 +47,7 @@ export const PartyKitSection: React.FC<PartyKitSectionProps> = ({ onAddToCart })
             Kits Festa Completos
           </h2>
           <p className="text-base text-[#6B4775]">
-            Com o kit festa você pode surpreender alguém de uma forma muito especial! Salgadinhos quentinhos, docinhos finos, bolo decorado, refrigerante e topo temático.
+            Com o kit festa você pode surpreender alguém de uma forma muito especial! Salgadinhos quentinhos, docinhos tradicionais, bolo decorado, refrigerante e topo temático.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export const PartyKitSection: React.FC<PartyKitSectionProps> = ({ onAddToCart })
                           ♥
                         </span>
                         <span>
-                          <strong>{kit.docinhos}</strong> Docinhos finos artesanais
+                          <strong>{kit.docinhos}</strong> Docinhos tradicionais
                         </span>
                       </li>
                       <li className="flex items-center gap-2.5">

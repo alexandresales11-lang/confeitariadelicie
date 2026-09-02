@@ -91,7 +91,7 @@ export const MenuCatalog: React.FC<MenuCatalogProps> = ({ onAddToCart, onSelectI
             Delícias Feitas com Amor
           </h2>
           <p className="text-base text-[#6B4775]">
-            Explore nossos bolos caseiros, docinhos finos, trufas especiais, pudins cremosos e cestas de presente.
+            Explore nossos bolos caseiros, docinhos tradicionais, trufas especiais, pudins cremosos e cestas de presente.
           </p>
         </div>
 
